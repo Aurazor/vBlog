@@ -6,10 +6,10 @@
       </div>
       <div class="nav-links">
         <ul>
-          <li>Demos</li>
-          <li>Style Guide</li>
-          <li>Membership</li>
-          <li>Join</li>
+          <li>Home</li>
+          <li>New</li>
+          <li>Login</li>
+          <li>Sign Up</li>
         </ul>
       </div>
     </nav>
@@ -53,6 +53,15 @@
               display: inline-block;
               margin: 0 10px;
               font-family: 'Inter', sans-serif;
+              cursor: pointer;
+              transition: 0.5s ease;
+
+            &:hover{
+              text-decoration: underline;
+              background: linear-gradient(to bottom left, #94F568, #2959A7);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
           }
         }
       }

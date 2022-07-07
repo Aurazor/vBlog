@@ -9,13 +9,10 @@
         </div>
     </div>
     <div class="blog-title">
-<!--      Creating is a privilege but it’s also a gift-->
       {{ item.title }}
     </div>
     <div class="blog-desc">
       {{ item.desc }}
-
-      <!--      Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex...-->
     </div>
   </div>
 </template>
@@ -33,7 +30,10 @@ export default {
   .blog-item{
     .blog-img{
       img {
-        width: 100%;
+        width:100%;
+        height:380px;
+        /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+        object-fit:cover;
         border-radius: 20px;
       }
     }
@@ -54,6 +54,10 @@ export default {
       font-weight: bold;
       color: #151618;
       margin-bottom: 10px;
+    }
+
+    .blog-desc{
+      color: #747a7a;
     }
   }
 </style>
